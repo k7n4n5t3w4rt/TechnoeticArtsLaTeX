@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage{times}
+
+% Hyperlink setup
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% BibLaTeX setup for Harvard style with full first names
+\usepackage[backend=biber, style=authoryear, maxcitenames=2, giveninits=false, natbib=true, uniquename=full]{biblatex}
+\addbibresource{references.bib} % Specify the bibliography file
+
+\title{Test v0.1.25}
+\author{Your Name \\ \texttt{your.email@example.com}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Your abstract text goes here.
+\end{abstract}
+
+\section*{Introduction}
+The introduction text goes here. You can cite sources using \textcite{RindCmplxtyAndClmt1999} for textual citations, or \parencite{RindCmplxtyAndClmt1999} for parenthetical citations.
+
+\section*{Methodology}
+The methodology text goes here.
+
+\section*{Results}
+The results text goes here.
+
+\section*{Discussion}
+The discussion text goes here.
+
+\section*{Conclusion}
+The conclusion text goes here. Testy...
+
+\printbibliography
+
+\end{document}
